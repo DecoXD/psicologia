@@ -1,0 +1,54 @@
+body{
+    background-color: #FCE6B0;
+}
+
+.infoGuide{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight:300;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.mainContent{  
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.title{
+    font-family: "Roboto";
+    font-weight:300;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  
+}
+
+.mainMenu{
+    font-size: 1.4rem;
+    font-weight: 400;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    align-items: center;
+
+}
+
+.mainMenu a{
+ padding: 1rem ;
+width: 100%;
+ border-radius: 20px;
+ background-color: #FFDB8F;
+ text-align: center;
+}
+
+.mainMenu a:hover{
+    transform: scale(1.03);
+    color: #353535;
+}

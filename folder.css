@@ -1,0 +1,61 @@
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background-color: #abeafa36;
+    position: relative;
+    font-family: "Roboto";
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    font-size: 1.6rem;
+    color: #585656;
+}
+.slider{
+    max-width: 800px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+  
+}
+
+.slide{
+    display: flex;
+    width: 200%;
+    /* border: 2px solid red; */
+}
+
+.slide_item{
+width: 50%;}
+
+.controls{
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55%;
+    width: 100%;
+}
+
+.btn{
+    padding:  .4rem;
+    border-radius: 20px;   
+}
+
+.btn:hover{
+    background-color: #abeafa36;
+    cursor: pointer;
+}
+
+.slider:has(#radio1:checked) .slide {
+    margin-left: 0;
+}
+.slider:has(#radio2:checked) .slide {
+    margin-left: -100%;
+}
+
+#radio1,#radio2{
+    display: none;
+}

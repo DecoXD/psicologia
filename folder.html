@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5409648c0.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/assets/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="folder.css">
+    <link rel="stylesheet" href="index.css">
+    <title>folder</title>
+</head>
+<body>
+
+    <a href="/" class="back"> voltar <i class="fa-sharp fa-solid fa-right-from-bracket"></i></a>
+
+    <div class="slider">
+        <input type="radio" name="radio" id="radio1">
+        <input type="radio" name="radio" id="radio2">
+        <div class="slide">
+            <div class="slide_item">
+                <img src="./assets/images/folder-front.png" alt="">
+            </div>
+            <div class="slide_item">
+                <img src="./assets/images/back.png" alt="">
+            </div>
+            
+        </div>
+        <div class="controls">
+            <label for="radio1" class="btn" onclick="slider(-1,true)"><i class="fa-solid fa-arrow-left"></i></label>
+            <label for="radio2" class="btn" onclick="slider(1,true)"><i class="fa-solid fa-arrow-right"></i></label>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    let timer = 10000
+    let count = 0
+    function slider(pos = 1,click = false){
+        count += pos
+        if(count > 2){
+            count = 1
+        }
+        if(count < 1){
+            count = 2
+        }
+     
+        const atual = document.querySelector(`#radio${count}`)
+        
+
+        atual.checked = true
+        
+    }
+    const slideShow = setInterval(slider,timer)
+</script>
+</html>
