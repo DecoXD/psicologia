@@ -2,7 +2,7 @@ body{
     display: flex;
     min-height: 100vh;
     align-items: center;
-    background-color: #abeafa36;
+
     position: relative;
     font-family: "Roboto";
 }
@@ -45,7 +45,7 @@ width: 50%;}
 }
 
 .btn:hover{
-    background-color: #abeafa36;
+    background-color: #abeafa80;
     cursor: pointer;
 }
 
