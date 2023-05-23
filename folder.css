@@ -2,16 +2,24 @@ body{
     display: flex;
     min-height: 100vh;
     align-items: center;
-
+    flex-direction: column;
     position: relative;
+    padding: 2rem .5rem;
     font-family: "Roboto";
 }
 
 .back{
     position: absolute;
     top: 0;
+    left: 0;
     font-size: 1.6rem;
     color: #585656;
+}
+
+.title{
+    font-family: 'Great Vibes';
+    font-size: clamp(3rem,1rem + 5vw , 6rem);
+    color: #3b3232fa;
 }
 .slider{
     max-width: 800px;
