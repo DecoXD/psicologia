@@ -96,7 +96,7 @@ width: 100%;
 }
 
 .one{
-    bottom: -100px;
+    bottom: -50px;
     left: -60px;
     transform: rotate(40deg);
 }
@@ -118,7 +118,14 @@ transform: scale(1.1);
     top: -10px;
     left: -50px;
 }
-/* footer{
-    background-color: red;
-    min-height: 200px;
-} */
+ @media(max-height:400px){
+    body{
+        overflow-y: scroll;
+    }
+    body ::-webkit-scrollbar-corner{
+        display: none;
+    }
+    .one,.three,.four{
+        display: none;
+    }
+ }
