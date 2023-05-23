@@ -1,7 +1,7 @@
 body{
     background-color: #FCE6B0;
     position: relative;
-    overflow: hidden;
+  
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -90,42 +90,39 @@ width: 100%;
 
 .image{
     position: absolute;
-    max-width: clamp(120px,100px + 10vw, 200px);
-   
+    width: clamp(120px,100px + 10vw, 200px);
     transition: 1s ease;
+    overflow: hidden;
 }
-
-.one{
-    bottom: -50px;
-    left: -60px;
-    transform: rotate(40deg);
-}
-
-.two{
-    bottom: -100px;
-    right: -20px;
-    
-}
-
 .image:hover{
-transform: scale(1.1);
+transform: scale(1.03) translate(-5px,-5px);
 }
+.one{
+    bottom: 0px;
+    left: 0px;
+}
+.two{
+    bottom: 0px;
+    right: 0px;}
 .three{
-    top: -40px;
-    right: 0;
-}
+    top: 0px;
+    right: 0;}
 .four{
-    top: -10px;
-    left: -50px;
+    top: 0px;
+    left: 0px;}
+
+.img1 img{
+margin-left: -50px;
+margin-bottom: -50px;
+transform: rotate(40deg);
 }
- @media(max-height:400px){
-    body{
-        overflow-y: scroll;
-    }
-    body ::-webkit-scrollbar-corner{
-        display: none;
-    }
-    .one,.three,.four{
+
+.img4 img{
+    margin-left: -50px;
+}
+
+ @media(max-width:400px){
+ .three{
         display: none;
     }
  }
