@@ -1,5 +1,7 @@
 body{
     background-color: #FCE6B0;
+    position: relative;
+    overflow: hidden;
 }
 
 .infoGuide{
@@ -30,6 +32,33 @@ body{
   
 }
 
+.write{
+    white-space: nowrap;
+    padding: 0 .5rem 0 0 ;
+    animation: piscar 1s steps(2) infinite,escrever 1.2s steps(16)  forwards;
+    width:0%;
+    overflow: hidden;
+}
+
+
+
+
+
+@keyframes piscar {
+    0%{   border-right: 1px solid transparent ;}
+    100%{   border-right: 1px solid #000 ;}
+}
+
+@keyframes escrever {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
 .mainMenu{
     font-size: 1.4rem;
     font-weight: 400;
@@ -51,4 +80,35 @@ width: 100%;
 .mainMenu a:hover{
     transform: scale(1.03);
     color: #353535;
+}
+
+.image{
+    position: absolute;
+    max-width: clamp(120px,100px + 10vw, 200px);
+   
+    transition: 1s ease;
+}
+
+.one{
+    bottom: -100px;
+    left: -60px;
+    transform: rotate(40deg);
+}
+
+.two{
+    bottom: -100px;
+    right: -20px;
+    
+}
+
+.image:hover{
+transform: scale(1.1);
+}
+.three{
+    top: -40px;
+    right: 0;
+}
+.four{
+    top: -10px;
+    left: -50px;
 }
