@@ -10,6 +10,12 @@ body{
     gap:3rem
 }
 
+.logo{
+    max-width: 200px;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
 .infoGuide{
     display: flex;
     align-items: center;
