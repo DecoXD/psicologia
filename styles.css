@@ -1,5 +1,4 @@
 body{
-    background-color: #FCE6B0;
     position: relative;
   
     min-height: 100vh;
@@ -79,7 +78,7 @@ body{
  padding: 1rem ;
 width: 100%;
  border-radius: 20px;
- background-color: #FFDB8F;
+ background-color: #9CDFE6;
  text-align: center;
 }
 

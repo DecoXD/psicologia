@@ -6,8 +6,11 @@ body{
     position: relative;
     padding: 2rem .5rem;
     font-family: "Roboto";
+   
 }
-
+.folder{
+    background-color: #9CDFE6 !important;
+}
 .back{
     position: absolute;
     top: 0;
