@@ -11,9 +11,11 @@ body{
 }
 
 .logo{
-    max-width: 200px;
+    max-width: 230px;
     margin-bottom: 30px;
     margin: auto;
+    position: absolute;
+    top: 20px;
 }
 
 .infoGuide{
@@ -127,7 +129,7 @@ transform: rotate(40deg);
 }
 
  @media(max-width:400px){
- .three{
+ .three,.four{
         display: none;
     }
  }
